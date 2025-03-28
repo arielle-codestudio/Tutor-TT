@@ -12,15 +12,18 @@
   <title>Welcome to Tutor TT</title>
 </head>
 <body>
+
   <!-- Nav Bar -->
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
     <div class="navbar-flex container">
-      <img src="images/logo.svg" alt="tutor">
+      <a href="/" aria-label="Logo Home Link">
+        <img src="images/logo.svg" alt="tutor logo"/>
+      </a>
       
       <div class="main-menu-items">
         <ul class="main-menu-list">
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="#chapters">Chapter</a>
@@ -38,12 +41,12 @@
             <a href="./contact.html">Contact</a>
           </li>
           <li>
-            <a href="facbook.com" target="_blank">
+            <a href="facbook.com" target="_blank" aria-label="Follow Us on Facebook">
               <i class="fa-brands fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a href="instagram.com" target="_blank">
+            <a href="instagram.com" target="_blank" aria-label="Follow Us on Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
@@ -53,15 +56,15 @@
       <!-- Mobile Menu -->
       <div class="mobile-menu">
         <!-- Hamburger Button -->
-        <div class="mobile-menu-toggle">
+        <div class="mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="mobile-menu-items" aria-label="Open mobile menu" tabindex="0">
           <i class="fas fa-bars fa-2x"></i>
         </div>
 
         <!-- Mobile Menu Items -->
-          <div class="mobile-menu-items">
+          <div id="mobile-menu-items" class="mobile-menu-items">
             <ul class="mobile-menu-list">
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="#chapters">Chapter</a>
@@ -79,12 +82,12 @@
                 <a href="./contact.html">Contact</a>
               </li>
               <li>
-                <a href="facbook.com" target="_blank">
+                <a href="facbook.com" target="_blank" aria-label="Follow Us on Facebook">
                   <i class="fa-brands fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="instagram.com" target="_blank">
+                <a href="instagram.com" target="_blank" aria-label="Follow Us on Instagram">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
@@ -92,6 +95,7 @@
           </div>
       </div>
   </nav>
+
 
   <!-- Inner Header -->
    <header class="inner-header">
@@ -139,11 +143,11 @@
             Follow Us on social media for updates about our courses.
           </p>
           <div class="social-icons">
-            <a href="#"> <i class="fa-brands fa-facebook fa-2x"></i></a>
-            <a href="#"> <i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a href="#"> <i class="fa-brands fa-linkedin fa-2x"></i></a>
-            <a href="#"> <i class="fa-brands fa-youtube fa-2x"></i></a>
-            <a href="#"> <i class="fa-brands fa-pinterest fa-2x"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Follow Us on Facebook"> <i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Follow Us on Instagram"> <i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="Follow Us on LinkedIn"> <i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="Follow Us on Youtube"> <i class="fa-brands fa-youtube fa-2x"></i></a>
+            <a href="https://pinterest.com" target="_blank" aria-label="Follow Us on Pinterest"> <i class="fa-brands fa-pinterest fa-2x"></i></a>
           </div>
         </div>
       </section>
@@ -162,10 +166,6 @@
           </p>
         </div>
        </footer>
-       
-
-
-
 
   <script src="js/script.js"></script>
   </body>
